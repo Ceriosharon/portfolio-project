@@ -1,0 +1,274 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header .logo span {
+    color: #f39c12;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #ff69b4; /* Pink hover for menu items */
+}
+
+.contact {
+    background-color: #ff69b4; /* Pink background for Contact button */
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact:hover {
+    background-color: #ff85c1; /* Slightly lighter pink on hover */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #f7f7f7;
+}
+
+.home-content {
+    max-width: 50%;
+}
+
+.home-content h3 {
+    font-size: 36px;
+    color: #333;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.home-content h1 span {
+    color: #ff69b4; /* Pink for the name */
+}
+
+.home-content p {
+    margin: 20px 0;
+    color: #555;
+}
+
+.btn-box {
+    margin-top: 20px;
+}
+
+.btn-1, .btn-2 {
+    background-color: #ff69b4; /* Pink buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover, .btn-2:hover {
+    background-color: #ff85c1; /* Lighter pink on hover */
+}
+
+/* Home Section Image Styling */
+.img-box img {
+    max-width: 100%;
+    border-radius: 15px; /* Rounded corners for the home section image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border: 5px solid #ff69b4; /* Pink border */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+.img-box img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.about-img img {
+    width: 400px;
+    border-radius: 50%; /* Circular image for a modern look */
+    border: 5px solid #ff69b4; /* Pink border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Smooth zoom animation */
+}
+
+.about-img img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content h2 span {
+    color: #ff69b4; /* Pink accent for About Me */
+}
+
+.about-content h3 {
+    font-size: 28px;
+    color: #555;
+}
+
+.about-content h3 span {
+    color: #ff69b4; /* Pink for Developer */
+}
+
+.about-content p {
+    margin: 20px 0;
+    color: #555;
+}
+
+.about-content .btn-2 {
+    padding: 10px 25px;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 60px;
+    background-color: #f7f7f7;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-form h2 span {
+    color: #ff69b4; /* Pink for Contact Me */
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-box input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-1 {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .social a:hover {
+    color: #ff69b4; /* Pink hover for social icons */
+}
+
+.footer .list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer .list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .list a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .list a:hover {
+    color: #ff69b4; /* Pink hover for footer links */
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home, .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content, .about-content {
+        max-width: 100%;
+    }
+
+    .img-box img, .about-img img {
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        display: block;
+    }
+}
